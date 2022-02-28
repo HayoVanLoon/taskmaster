@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Master</title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Task Master</h1>
+
+  <div class="row">
+
+    <h4>Tasks</h4>
+    <div class="col s12">
+
+      <div class="collection" id="tasks-list">
+      </div>
+
+      <button class="btn" id="create-task-button">Create Task</button>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <h4>Task Details</h4>
+    <div class="col s12">
+
+      <label>
+        <span>Title</span>
+        <input type="text" id="title-input" placeholder="task title">
+      </label>
+    </div>
+
+    <div class="col s12">
+      <label>
+        <input type="checkbox" id="done-input">
+        <span>Done</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6">
+      <button class="btn" id="save-task-button">Save</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12" id="message-div">
+    </div>
+    <div class="col s12 red-text" id="error-message-div">
+    </div>
+  </div>
+
+  <div class="row">
+    <h4>Fake Login</h4>
+    <div class="col s9">
+      <label>
+        <span>Current User</span>
+        <input type="text" id="current-user-input">
+      </label>
+    </div>
+    <div class="col s3">
+      <button class="btn" id="refresh-user-button">Log In</button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+<script src="/static/js/main.js"></script>
+
+</html>
